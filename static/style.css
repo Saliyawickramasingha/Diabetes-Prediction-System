@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #e0f2fe, #f8fafc);
+}
+
+/* Main Card */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 480px;
+    height: 92vh;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Title */
+.container h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+/* Inputs */
+.container input {
+    width: 100%;
+    padding: 9px 12px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #cbd5f5;
+    background: #f8fafc;
+    color: #0f172a;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.container input::placeholder {
+    color: #64748b;
+}
+
+.container input:focus {
+    background: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Button */
+.container button {
+    margin-top: 6px;
+    padding: 11px;
+    font-size: 15px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.container button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35);
+}
+
+/* Result */
+#result {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    min-height: 24px;
+    color: #0f172a;
+}
+
+/* Small height screens */
+@media (max-height: 700px) {
+    .container {
+        height: 100vh;
+        padding: 16px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    .container input {
+        padding: 7px 10px;
+        font-size: 13px;
+    }
+
+    .container button {
+        padding: 9px;
+        font-size: 14px;
+    }
+}
